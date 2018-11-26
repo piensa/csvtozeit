@@ -1,7 +1,9 @@
 {
-  "public": true,
   "version": 2,
-  "builds": [
-    { "src": "api/*/index.go", "use": "@now/go" }
-  ]
+  "public": true,
+  "builds": [{
+    "src": "*.go",
+    "use": "@now/go",
+    "config": { "maxLambdaSize": "50mb" }
+    }]
 }
