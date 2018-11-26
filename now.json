@@ -1,0 +1,7 @@
+{
+  "public": true,
+  "version": 2,
+  "builds": [
+    { "src": "api/*/index.go", "use": "@now/go" }
+  ]
+}
